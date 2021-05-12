@@ -30,13 +30,4 @@
     <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-brands-400.svg" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-brands-400.woff2" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-regular-400.svg" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-regular-400.woff2" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-solid-900.svg" />
-    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-solid-900.woff2" />
-  </ItemGroup>
-
 </Project>
