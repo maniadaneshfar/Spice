@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\FontAwesome\**" />
+    <Content Remove="wwwroot\lib\FontAwesome\**" />
+    <EmbeddedResource Remove="wwwroot\lib\FontAwesome\**" />
+    <None Remove="wwwroot\lib\FontAwesome\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.13" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.13" />
@@ -19,8 +26,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Controllers\" />
+    <Folder Include="wwwroot\Images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-brands-400.svg" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-brands-400.woff2" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-regular-400.svg" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-regular-400.woff2" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-solid-900.svg" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\webfonts\fa-solid-900.woff2" />
   </ItemGroup>
 
 </Project>
