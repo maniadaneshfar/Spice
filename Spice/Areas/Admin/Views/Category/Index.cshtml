@@ -26,7 +26,7 @@
         <table class="table table-striped border">
             <tr class="table-secondary">
                 <th>
-                    @Html.DisplayNameFor(m => m.Name)
+                    @Html.DisplayNameFor(m => m.Name) 
                 </th>
                 <th></th>
                 <th></th>
@@ -35,10 +35,10 @@
             {
                 <tr>
                     <td>
-                        @Html.DisplayNameFor(m => m.Name)
+                     @item.Name
                     </td>
                     <td>
-                        EDIT|DELETE|DETAILS
+                        <partial name="_TableButtonPartial"  model="@item.Id"/>
                     </td>
                     
                 </tr>
