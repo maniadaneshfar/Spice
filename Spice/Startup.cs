@@ -10,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 using Spice.Data;
 using System;
 using System.Collections.Generic;
+using Spice.Extentions;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -27,12 +28,9 @@ namespace Spice
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
+            services.DbContextExtention(Configuration);
+            services.IdentityUser();
+             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation() ;
         }
 

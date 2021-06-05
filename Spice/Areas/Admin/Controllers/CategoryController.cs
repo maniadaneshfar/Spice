@@ -39,6 +39,7 @@ namespace Spice.Areas.Admin.Controllers
             {
                 //if valid
                 _db.Category.Add(category);
+                //_db.SaveChanges();
                 await _db.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
 
