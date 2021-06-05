@@ -22,8 +22,8 @@ namespace Spice.Areas.Admin.Controllers
         }
         public async Task <IActionResult> Index()
         {
-            var menuItem = await _db.MenuItem.Include(m=>m.Category).Include(m=>m.SubCategory).ToListAsync();
-            return View();
+            var menuItems = await _db.MenuItem.Include(m=>m.Category).Include(m=>m.SubCategory).ToListAsync();
+            return View(menuItems);
         }
     }
 }
